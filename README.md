@@ -1,29 +1,25 @@
 
 # Lesson 0: Configuring your computer
 
-In this lesson, you will set up a Python computing environment for scientific computing. There are two main ways people set up Python for scientific computing.
+Before the lessons, you will set up a Python computing environment for scientific computing. There are two main ways people set up Python for scientific computing.
 1. By downloading and installing package by package with tools like [apt-get](https://help.ubuntu.com/community/AptGet/Howto), [pip](https://docs.python.org/3/installing/), etc.
 2. By downloading and installing a Python distribution that contains binaries of many of the scientific packages needed. The major distributions of these are [Anaconda](https://www.anaconda.com) and [Enthought Canopy](https://www.enthought.com/product/canopy/). Both contain IDEs.
 
-In this class, we will use Anaconda, with its associated package manager, `conda`. It has become the de facto package manager/distribution for scientific use.
+We recommend to use Anconda, with its associated package manager, `conda`, or Miniconda,  It has become the de facto package manager/distribution for scientific use.
 
 Before we get rolling with the Anaconda distribution, we have some considerations and installations to get out of the way first.
 
 ## Windows users: Install Chrome or Firefox
 
-We will be using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) in the bootcamp. It is browser-based, and Chrome, Firefox, and Safari are supported. Internet Explorer is **not**. Therefore, if you are a Windows user, you need to be sure you have either Chrome of Firefox installed.
-
-## Uninstalling Anaconda
-
-If you have previously installed Anaconda with a version of Python other than 3.7, you need to uninstall it, removing it completely from your computer. You can find instructions on how to do that from the [official uninstallation documentation](https://docs.anaconda.com/anaconda/install/uninstall/).
+We will be using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) in the Python sessions. It is browser-based, and Chrome, Firefox, and Safari are supported. Internet Explorer is **not**. Therefore, if you are a Windows user, you need to be sure you have either Chrome of Firefox installed.
 
 ## Downloading and installing Anaconda
 
 Downloading and installing Anaconda is simple. 
 1. Go to the [Anaconda distribution homepage](https://www.anaconda.com/distribution/) and download the graphical installer.  
-2. Be sure to download Anaconda for Python 3.7 for the appropriate operating system.
+2. Be sure to download Anaconda for Python 3.6 or 3.7 for the appropriate operating system.
 3. Follow the on-screen instructions for installation. When prompted, be sure to "Install for me only."
-4. You may be prompted for optional installations, like [PyCharm](https://www.jetbrains.com/pycharm/). You will not need these for the bootcamp.
+4. You may be prompted for optional installations, like [PyCharm](https://www.jetbrains.com/pycharm/). You will not need these for this sessions. 
 
 That's it!  After you do that, you will have a functioning Python distribution.
 
