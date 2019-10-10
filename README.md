@@ -45,10 +45,9 @@ If anything is out of date, you will be prompted to perform the updates, and pre
 
 Make a new environment (here called `ts13`) and install the necessary packages, e.g. like this:
 
-```console
-$ conda create --name ts13 python=3.6
-$ conda activate ts13
-```
+    console
+    conda create --name ts13 python=3.6
+    conda activate ts13
 
 ## Installations
 
