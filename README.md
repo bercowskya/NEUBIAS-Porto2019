@@ -7,7 +7,7 @@ Before the lessons, you will set up a Python computing environment for scientifi
 1. By downloading and installing package by package with tools like [apt-get](https://help.ubuntu.com/community/AptGet/Howto), [pip](https://docs.python.org/3/installing/), etc.
 2. By downloading and installing a Python distribution that contains binaries of many of the scientific packages needed. The major distributions of these are [Anaconda](https://www.anaconda.com) and [Enthought Canopy](https://www.enthought.com/product/canopy/). Both contain IDEs.
 
-We recommend to use Anconda, with its associated package manager, `conda`, or Miniconda,  It has become the de facto package manager/distribution for scientific use.
+We recommend to use [Anaconda](https://www.anaconda.com/distribution/), with its associated package manager, `conda`, or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).  They have become the de facto package manager/distribution for scientific use.
 
 Before we get rolling with the Anaconda distribution, we have some considerations and installations to get out of the way first.
 
@@ -41,9 +41,49 @@ conda works from the command line.  Now that you know how to get a command line 
 
 If anything is out of date, you will be prompted to perform the updates, and press `y` to continue. (If everything is up to date, you will just see a list of all the installed packages.)  They may even be some downgrades.  This happens when there are package conflicts where one package requires an earlier version of another.  conda is very smart and figures all of this out for you, so you can almost always say "yes" (or "`y`") to conda when it prompts you.
 
+## Creating an environment for TS13 
+Make a new environment (here called `ts13`) and install the necessary packages, e.g. like this:
+
+```console
+$ conda create --name ts13 python=3.6
+$ conda activate ts13
+```
+
 ## Installations
 
-There are several additional installations you need to do for the bootcamp. We will first install some plotting packages we need, which are available as [PyViz](http://pyviz.org).
+There are several additional installations you need to do for the upcoming sessions.
+
+**[1] Python Scikit-image session**
+As the name suggests, this session will be about demonstrating how 
+typical image processing and analysis tasks can be accomplished with 
+[scikit-image](https://scikit-image.org/). I will prepare examples that I think are relevant, but this session could be more interactive based on the interests of the participants.
+
+    conda install numpy ipython jupyter matplotlib pandas scipy scikit-image scikit-learn seaborn tqdm
+    pip install matplotlib-scalebar
+    
+**[2] Machine Learning session**
+*I'll look into getting the deep learning examples to run on [Google Colab](https://colab.research.google.com), but can't promise that it'll work.*
+
+If you want to follow along the deep learning examples on your own computer, please first [install TensorFlow 1.x](https://www.tensorflow.org/install) (**not TensorFlow 2**) by following the official instructions.
+
+It is strongly recommended to use TensorFlow with [GPU support](https://www.tensorflow.org/install/gpu) if you have a compatible GPU from Nvidia. Note that it is very important to install the specific versions of CUDA and cuDNN that are compatible with the respective version of TensorFlow.
+
+The packages for [Content-aware Image Restoration (CARE)](http://csbdeep.bioimagecomputing.com) and [StarDist - Object Detection with Star-convex Shapes](https://github.com/mpicbg-csbd/stardist) can then be installed with `pip`:
+
+    console
+    pip install csbdeep
+    pip install stardist
+
+Note that the `stardist` package relies on a C++ extension, which needs a suitable compiler to be installed on your system. Please read [this](https://github.com/mpicbg-csbd/stardist/blob/master/README.md#troubleshooting)
+if you run into compilation problems.
+
+If time permits, we'll also cover [Noise2Void - Learning Denoising from Single Noisy Images](https://github.com/juglab/n2v). Please install it like this:
+
+    console
+    pip install git+https://github.com/juglab/n2v.git@master
+
+**[3] Plotting and data analysis**
+We will first install some plotting packages we need, which are available as [PyViz](http://pyviz.org).
 
     conda install -c pyviz pyviz
     
