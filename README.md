@@ -42,6 +42,7 @@ conda works from the command line.  Now that you know how to get a command line 
 If anything is out of date, you will be prompted to perform the updates, and press `y` to continue. (If everything is up to date, you will just see a list of all the installed packages.)  They may even be some downgrades.  This happens when there are package conflicts where one package requires an earlier version of another.  conda is very smart and figures all of this out for you, so you can almost always say "yes" (or "`y`") to conda when it prompts you.
 
 ## Creating an environment for TS13 
+
 Make a new environment (here called `ts13`) and install the necessary packages, e.g. like this:
 
 ```console
@@ -54,6 +55,7 @@ $ conda activate ts13
 There are several additional installations you need to do for the upcoming sessions.
 
 **[1] Python Scikit-image session**
+
 As the name suggests, this session will be about demonstrating how 
 typical image processing and analysis tasks can be accomplished with 
 [scikit-image](https://scikit-image.org/). I will prepare examples that I think are relevant, but this session could be more interactive based on the interests of the participants.
@@ -62,6 +64,10 @@ typical image processing and analysis tasks can be accomplished with
     pip install matplotlib-scalebar
     
 **[2] Machine Learning session**
+We will first cover some machine learning (ML) basics and discuss the tradeoffs between traditional image analysis approaches and ML-based ones.
+This session will focus on the tasks of image restoration and segmentation, for which we'll explore classic machine learning methods, as well as recent approaches based on deep learning (e.g. [CARE](http://csbdeep.bioimagecomputing.com), [StarDist](https://github.com/mpicbg-csbd/stardist)).
+Examples will be demonstrated via Jupyter notebooks using Python, which you can follow along if you install the necessary software.
+
 *I'll look into getting the deep learning examples to run on [Google Colab](https://colab.research.google.com), but can't promise that it'll work.*
 
 If you want to follow along the deep learning examples on your own computer, please first [install TensorFlow 1.x](https://www.tensorflow.org/install) (**not TensorFlow 2**) by following the official instructions.
@@ -83,6 +89,7 @@ If time permits, we'll also cover [Noise2Void - Learning Denoising from Single N
     pip install git+https://github.com/juglab/n2v.git@master
 
 **[3] Plotting and data analysis**
+
 We will first install some plotting packages we need, which are available as [PyViz](http://pyviz.org).
 
     conda install -c pyviz pyviz
@@ -110,6 +117,7 @@ After installing all of these extensions, you can rebuild JupyterLab.
 You should close your JupyterLab session and terminate Anaconda Navigator after you have completed the build. Relaunch Anaconda Navigator and launch a fresh JupyterLab instance. As before, after JupyterLab launches, launch a new terminal window so that you can proceed with setting up Git.
 
 ## Checking your distribution
+
 We'll now run a quick test to make sure things are working properly.  We will make a quick plot that requires some of the scientific libraries we will use in the bootcamp.
 
 Use the JupyterLab launcher (you can get a new launcher by clicking on the `+` icon on the left pane of your JupyterLab window) to launch a notebook. In the first cell (the box next to the `In [ ]:` prompt), paste the code below. To run the code, press `Shift+Enter` while the cursor is active inside the cell. You should see a plot that looks like the one below. If you do, you have a functioning Python environment for scientific computing!
