@@ -1,5 +1,5 @@
 # README
-Python is an open-source language, with extensive support libraries and user-friendly data structures. During these sessions, we will go through some applications where Python could be useful in your facilities. Handling data, which can come in many different formats, is the most common practice in scientific computing. Pandas is the primary tool in the Python ecosystem for data handling. We will learn how to use Pandas to handle the data sets and get what we want out of them, which in many cases are plots. The landscape is divided into three main pods based on the low-level renderer of the graphics, JavaScript, Matplotlib, and OpenGL (though Matplotlib is higher-level than JavaScript and OpenGL). We will not discuss packages based on OpenGL. Packages that use JavaScript for rendering are particularly well suited for interactivity in browsers. Interactivity and portability (accomplished by rendering in browsers) are key features of modern plotting libraries, so we will use JavaScript-based plotting. Finally, Python is a multi-paradigm programming language. Meaning, it supports different programming approaches. One of the most popular approaches to solve a programming problem is by using object-oriented programming (OOP). We will have a look at OOP and how it can help you create reusable codes.
+Python is an open-source language, with extensive support libraries and user-friendly data structures. During these sessions, we will go through some applications where Python could be useful in your facilities. Data handling, interactive and portable plotting, object oriented programing, typical image processing and analysis task and, the basics of machine learning. 
 
 # Lesson 0: Configuring your computer
 
@@ -55,9 +55,7 @@ There are several additional installations you need to do for the upcoming sessi
 
 **[1] Python Scikit-image session**
 
-As the name suggests, this session will be about demonstrating how 
-typical image processing and analysis tasks can be accomplished with 
-[scikit-image](https://scikit-image.org/). I will prepare examples that I think are relevant, but this session could be more interactive based on the interests of the participants.
+As the name suggests, this session will be about demonstrating how typical image processing and analysis tasks can be accomplished with [scikit-image](https://scikit-image.org/). I will prepare examples that I think are relevant, but this session could be more interactive based on the interests of the participants.
 
     conda install numpy ipython jupyter matplotlib pandas scipy scikit-image scikit-learn seaborn tqdm
     pip install matplotlib-scalebar
