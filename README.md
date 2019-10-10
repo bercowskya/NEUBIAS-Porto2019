@@ -13,7 +13,7 @@ Before we get rolling with the Anaconda distribution, we have some consideration
 
 ## Windows users: Install Chrome or Firefox
 
-We will be using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) in the Python sessions. It is browser-based, and Chrome, Firefox, and Safari are supported. Internet Explorer is **not**. Therefore, if you are a Windows user, you need to be sure you have either Chrome of Firefox installed.
+We will be using [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/) in the Python sessions. It is browser-based, and Chrome, Firefox, and Safari are supported. Internet Explorer is **not**. Therefore, if you are a Windows user, you need to be sure you have either Chrome of Firefox installed.
 
 ## Downloading and installing Anaconda
 
@@ -91,7 +91,7 @@ We will first install some plotting packages we need, which are available as [Py
 
     conda install -c pyviz pyviz
     
-Some packages may again be downgraded with the installation of PyViz, and that is ok. Next, to configure JupyterLab, we need to install [node.js](https://nodejs.org/).
+Some packages may again be downgraded with the installation of PyViz, and that is ok. Next, to configure Jupyter Notebook, we need to install [node.js](https://nodejs.org/).
 
     conda install nodejs 
     
@@ -99,7 +99,7 @@ We will also install [watermark](https://github.com/rasbt/watermark), which enab
 
     pip install watermark black blackcellmagic bokeh-catplot bootcamp_utils
 
-Finally, we need to configure JupyterLab to work with the plotting packages we will use.
+Finally, we need to configure Jupyter Notebook to work with the plotting packages we will use.
 
     jupyter labextension install --no-build @pyviz/jupyterlab_pyviz
     
@@ -111,13 +111,13 @@ After installing all of these extensions, you can rebuild JupyterLab.
 
     jupyter lab build
     
-You should close your JupyterLab session and terminate Anaconda Navigator after you have completed the build. Relaunch Anaconda Navigator and launch a fresh JupyterLab instance. As before, after JupyterLab launches, launch a new terminal window so that you can proceed with setting up Git.
+You should close your Jupyter session and terminate Anaconda Navigator after you have completed the build. Relaunch Anaconda Navigator and launch a fresh Jupyter Notebook instance. As before, after JupyterLab launches, launch a new terminal window so that you can proceed with setting up Git.
 
 ## Checking your distribution
 
 We'll now run a quick test to make sure things are working properly.  We will make a quick plot that requires some of the scientific libraries we will use during these sessions.
 
-Use the JupyterLab launcher (you can get a new launcher by clicking on the `+` icon on the left pane of your JupyterLab window) to launch a notebook. In the first cell (the box next to the `In [ ]:` prompt), paste the code below. To run the code, press `Shift+Enter` while the cursor is active inside the cell. You should see a plot that looks like the one below. If you do, you have a functioning Python environment for scientific computing!
+Use the Jupyter Notebook launcher from Anaconda navigator to launch a notebook. In the first cell (the box next to the `In [ ]:` prompt), paste the code below. To run the code, press `Shift+Enter` while the cursor is active inside the cell. You should see a plot that looks like the one below. If you do, you have a functioning Python environment for scientific computing!
 
 
 ```python
