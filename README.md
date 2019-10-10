@@ -25,11 +25,11 @@ Downloading and installing Anaconda is simple.
 
 That's it!  After you do that, you will have a functioning Python distribution.
 
-## Launching JupyterLab and a terminal
+## Launching Jupyter Notebook and a terminal
 
 After installing the Anaconda distribution, you should be able to launch the **Anaconda Navigator**. If you're using macOS, this is available in your `Applications` menu. If you are using Windows, you can do this from the Start menu. Launch Anaconda Navigator.
 
-We will be using JupyterLab throughout the Python sessions. You should see an option to launch JupyterLab. When you do that, a new browser window or tab will open with JupyterLab running. Within the JupyterLab window, you will have the option to launch a notebook, a console, a terminal, or a text editor. We will use all of these during the bootcamp. For the updating and installation of necessary packages, click on `Terminal` to launch a terminal. You will get a terminal window (probably black) with a bash prompt. We refer to this text interface in the terminal as the **command line**.
+We will be using Jupyter Notebook throughout the Python sessions. You should see an option to launch Jupyter Notebook. When you do that, a new browser window or tab will open with Jupyter Notebook running. For the updating and installation of necessary packages, open a new `Terminal` window. You will get a terminal window (probably black) with a bash prompt. We refer to this text interface in the terminal as the **command line**.
 
 ## The conda package manager
 
