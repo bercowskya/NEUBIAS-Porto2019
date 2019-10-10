@@ -95,7 +95,7 @@ Some packages may again be downgraded with the installation of PyViz, and that i
 
     conda install nodejs 
     
-We will also install [watermark](https://github.com/rasbt/watermark), which enables us to conveniently display version numbers of the software we are using. For this installation, we will use `pip`. There are a few other packages from pip we will need for the bootcamp, so we can go ahead and install those now.
+We will also install [watermark](https://github.com/rasbt/watermark), which enables us to conveniently display version numbers of the software we are using. For this installation, we will use `pip`. There are a few other packages from pip we will need for these sessions, so we can go ahead and install those now.
 
     pip install watermark black blackcellmagic bokeh-catplot bootcamp_utils
 
@@ -115,7 +115,7 @@ You should close your JupyterLab session and terminate Anaconda Navigator after 
 
 ## Checking your distribution
 
-We'll now run a quick test to make sure things are working properly.  We will make a quick plot that requires some of the scientific libraries we will use in the bootcamp.
+We'll now run a quick test to make sure things are working properly.  We will make a quick plot that requires some of the scientific libraries we will use during these sessions.
 
 Use the JupyterLab launcher (you can get a new launcher by clicking on the `+` icon on the left pane of your JupyterLab window) to launch a notebook. In the first cell (the box next to the `In [ ]:` prompt), paste the code below. To run the code, press `Shift+Enter` while the cursor is active inside the cell. You should see a plot that looks like the one below. If you do, you have a functioning Python environment for scientific computing!
 
@@ -134,7 +134,7 @@ y = 13 * np.cos(t) - 5 * np.cos(2*t) - 2 * np.cos(3*t) - np.cos(4*t)
 
 p = bokeh.plotting.figure(height=250, width=275)
 p.line(x, y, color='red', line_width=3)
-text = bokeh.models.Label(x=0, y=0, text='bootcamp', text_align='center')
+text = bokeh.models.Label(x=0, y=0, text='NEUBIAS', text_align='center')
 p.add_layout(text)
 
 bokeh.io.show(p)
