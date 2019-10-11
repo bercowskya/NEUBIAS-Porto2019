@@ -105,6 +105,7 @@ Finally, we need to configure Jupyter Notebook to work with the plotting package
     
 You may also wish to install a spell-checker (this one isn't necessary).
 
+    conda install -c conda-forge jupyterlab
     jupyter labextension install --no-build @ijmbarr/jupyterlab_spellchecker
 
 After installing all of these extensions, you can rebuild JupyterLab.
