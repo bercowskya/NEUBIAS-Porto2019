@@ -45,7 +45,6 @@ If anything is out of date, you will be prompted to perform the updates, and pre
 
 Make a new environment (here called `ts13`) and install the necessary packages, e.g. like this:
 
-    console
     conda create --name ts13 python=3.6
     conda activate ts13
 
@@ -73,7 +72,6 @@ It is strongly recommended to use TensorFlow with [GPU support](https://www.tens
 
 The packages for [Content-aware Image Restoration (CARE)](http://csbdeep.bioimagecomputing.com) and [StarDist - Object Detection with Star-convex Shapes](https://github.com/mpicbg-csbd/stardist) can then be installed with `pip`:
 
-    console
     pip install csbdeep
     pip install stardist
 
@@ -82,7 +80,6 @@ if you run into compilation problems.
 
 If time permits, we'll also cover [Noise2Void - Learning Denoising from Single Noisy Images](https://github.com/juglab/n2v). Please install it like this:
 
-    console
     pip install git+https://github.com/juglab/n2v.git@master
 
 **[3] Plotting and data analysis**
