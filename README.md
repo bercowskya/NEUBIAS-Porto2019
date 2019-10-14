@@ -31,14 +31,6 @@ After installing the Anaconda distribution, you should be able to launch the **A
 
 We will be using Jupyter Notebook throughout the Python sessions. You should see an option to launch Jupyter Notebook. When you do that, a new browser window or tab will open with Jupyter Notebook running. For the updating and installation of necessary packages, open a new `Terminal` window. You will get a terminal window (probably black) with a bash prompt. We refer to this text interface in the terminal as the **command line**.
 
-## The conda package manager
-
-conda is a package manager for keeping all of your packages up-to-date.  It has plenty of functionality beyond our basic usage in class, which you can learn more about by reading the [docs](http://conda.pydata.org/docs/get-started.html).  We will primarily be using conda to install and update packages.
-
-conda works from the command line.  Now that you know how to get a command line prompt, you can start using conda.  The first thing we'll do is update the packages that came with the Anaconda distribution.  To do this, enter the following on the command line:
-
-    conda update --all
-
 If anything is out of date, you will be prompted to perform the updates, and press `y` to continue. (If everything is up to date, you will just see a list of all the installed packages.)  They may even be some downgrades.  This happens when there are package conflicts where one package requires an earlier version of another.  conda is very smart and figures all of this out for you, so you can almost always say "yes" (or "`y`") to conda when it prompts you.
 
 ## Creating an environment for TS13 
@@ -84,6 +76,19 @@ If time permits, we'll also cover [Noise2Void - Learning Denoising from Single N
 
 **[3] Plotting and data analysis**
 
+### The conda package manager
+
+conda is a package manager for keeping all of your packages up-to-date.  It has plenty of functionality beyond our basic usage in class, which you can learn more about by reading the [docs](http://conda.pydata.org/docs/get-started.html).  We will primarily be using conda to install and update packages.
+
+conda works from the command line.  Now that you know how to get a command line prompt, you can start using conda.  The first thing we'll do is update the packages that came with the Anaconda distribution.  To do this, enter the following on the command line:
+
+    conda update --all
+  
+We will now make a new environment (here called `ts13-plot`) and install the necessary packages, e.g. like this:
+
+    conda create --name ts13-plot python=3.6
+    conda activate ts13-plot
+    
 We will first install some plotting packages we need, which are available as [PyViz](http://pyviz.org).
 
     conda install -c pyviz pyviz
