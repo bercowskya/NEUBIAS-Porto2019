@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bercowskya/NEUBIAS-Porto2019/master)
+
 # README
 Python is an open-source language, with extensive support libraries and user-friendly data structures. During these sessions, we will go through some applications where Python could be useful in your facilities. Data handling, interactive and portable plotting, object oriented programing, typical image processing and analysis task and, the basics of machine learning. 
 
